@@ -1,0 +1,390 @@
+:root{
+    --choco: #df8723;
+    --fort: #2e160c;
+    --foncee: #613c2a;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    color: rgb(156, 81, 20);
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--fort);
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header h1{
+    padding: 10px 0px 0px 5px;
+}
+.header span {
+    color: rgb(240, 179, 27);
+}
+header .links{
+    display: flex;
+    margin: 20px 0px 0px 30px;
+    list-style: none;
+}
+.header .links a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0 15px;
+}
+.active,
+.header .links a:hover{
+    border-bottom: 1px solid var(--choco);
+    transition: all .2s;
+}
+.btn{
+    margin: 18px -10px 0px 50px;
+}
+.header button{
+    padding: 8px;
+    border: 1px solid transparent;
+    margin: 0 8px;
+    color: rgb(75, 24, 0);
+    background: rgba(165, 42, 42, 0.45);
+    font-weight: bold;
+    border-radius: 20px;
+}
+.header button:hover{
+    background: #000000a1;
+    color: burlywood;
+    transition: all .3s;
+}
+.header .btn1{
+    color: inherit;
+    background: none;
+    border: 1px solid rgb(100, 34, 3);
+}
+.header .btn2{
+    background: var(--choco);
+    color: white;
+}
+.main{
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.826)), url(img/banner.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--choco);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    padding: 20px 10px 0 40px;
+    margin-top: 60px;
+    z-index: 0;
+}
+.main {
+    background-attachment: fixed; /* ✅ le fond reste fixe */
+}
+.main-p::before{
+    content: ' ------ ';
+    
+}
+.main-p{
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+.main .m,
+.main .m1
+{
+    font-family: serif;
+    font-size: 28px;
+}
+.main .m1{
+    color: white;
+}
+.p{
+    margin-bottom: 25px;
+}
+.pr{
+   width: 800px;
+   margin-bottom: 100px;
+   color: #f0d4b5;
+}
+.main button{
+    margin-bottom: 15px;
+    padding: 6px 8px;
+    border: #df8723 1px solid;
+    color: inherit;
+    background: transparent;
+    border-radius: 30px;
+}
+.main .main-btn1{
+    color: white;
+    background: var(--choco);
+}
+.main button:hover{
+    opacity: .8;
+    transition: all .2s;
+    cursor: pointer;
+}
+.article1 .par{
+    text-align: center;
+    align-items: center;
+}
+.selec{
+    font-size: 15px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+h3{
+    font-family: serif;
+    
+    font-size: 28px;
+}
+h3::after{
+    display: block;
+    content: "________";
+    color: inherit;
+}
+.shop .shop-desc{
+    text-align: center;
+}
+
+.shop p{
+    margin-bottom: 10px;
+}
+.shop .lorem{
+    color: white;
+}
+.shop-cards{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.card1{
+    height: 100%;
+    width: 280px;
+    background: var(--fort);
+    position: relative;
+    margin-bottom: 10px;
+}
+.card2{
+    height: 100%;
+    width: 280px;
+    background: var(--fort);
+    position: relative; 
+    margin-bottom: 10px;
+}
+.card3{
+    height: 100%;
+    width: 280px;
+    background: var(--fort);
+    position: relative; 
+    margin-bottom: 10px;
+}
+.card1 img{
+    width: 100%;
+    height: 200px;
+    opacity: .8;
+}
+.card2 img{
+    width: 100%;
+    height: 200px;
+    opacity: .8;
+}
+.card3 img{
+    width: 100%;
+    height: 200px;
+    opacity: .8;
+}
+.card1 button{
+    position: absolute;
+    right: 20px;
+    color: white;
+    background: goldenrod;
+    font-weight: bold;
+    margin-top: -20px;
+}
+.card2 button{
+    position: absolute;
+    right: 20px;
+    color: white;
+    background: goldenrod;
+    font-weight: bold;
+    margin-top: -20px;
+}
+.card3 button{
+    position: absolute;
+    right: 20px;
+    color: white;
+    background: goldenrod;
+    font-weight: bold;
+    margin-top: -20px;
+    transition: all;
+}
+.card1 button:hover{
+    transform: scale(1.2);
+  font-weight: bolder;
+}
+.card2 button:hover{
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+.card3 button:hover{
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+.card1 .desc{
+    padding-top: 10px;
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+.card2 .desc{
+    padding-top: 10px;
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+.card3 .desc{
+    padding-top: 10px;
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+.card1 .def{
+    color: var(--choco);
+    padding: 10px;
+}
+.card2 .def{
+    color: var(--choco);
+    padding: 10px;
+}
+.card3 .def{
+    color: var(--choco);
+    padding: 10px;
+}
+.card1 .price{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:  0 10px;
+}
+.card2 .price{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:  0 10px;
+}
+.card3 .price{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:  0 10px;
+}
+.price:nth-last-child(1){
+    font-weight: bold;
+}
+.footer{
+    background: var(--fort);
+}
+.flex-foot{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+}
+.footer h4{
+    color: white;
+    padding-bottom: 20px;
+}
+.flex-foot>div{
+    width: 220px;
+    margin: 0 20px;
+}
+.line{
+    border: 1px solid var(--choco);
+    width: 50px;
+    margin-bottom: 10px;
+}
+.quick li,
+.about li{
+    list-style: none;
+}
+.about p{
+    color: var(--choco);
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.footer .links {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.footer>a{
+     height: 27px;
+     width: 27px;
+}
+.footer .links a{
+    margin: 8px;
+    opacity: .7;
+    transition: all .3s;
+}
+.links a:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.quick li a{
+    list-style: none;
+    text-decoration: none;
+    color: #df8723;
+    line-height: 25px;
+    opacity: .8;
+    transition: all .2s;
+}
+.quick li a::before{
+    content: "- ";
+}
+.quick  a:hover{
+    opacity: 1;
+    font-size: 17px;
+}
+.contact li{
+    list-style: none;
+    color: #df8723;
+    line-height: 25px;
+    opacity: .8;
+    transition: all .2s;
+}
+.contact li:hover{
+    opacity: 1;
+    font-size: 17px;
+    font-weight: bold;
+}
+.contact li::before{
+    content: " ";
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(img/phone.svg) center center / cover no-repeat;
+    color: #df8723;
+    margin-right: 5px;
+}
+.contact .mail::before{
+    background: url(img/mail.svg) center center / cover no-repeat;
+}
+.contact .sfax::before{
+    background: url(img/message.svg) center center / cover no-repeat;
+}
+.contact .adress::before{
+    background: url(img/home.svg) center center / cover no-repeat;
+}
+.copy{
+    color: #df8723;
+    text-align: center;
+    padding: 10px;
+}
